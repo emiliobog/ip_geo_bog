@@ -22,8 +22,11 @@ resp = input("IP>> ")
 geoapi = 'http://ipinfo.io/{}'.format(resp)
 
 risk = 'https://fraudguard.io/?ip='.format(resp)
+
 onde = requests.get("https://ip.teoh.io/api/vpn/"+resp)
 salav = requests.get(geoapi)
+risklvl = requests.get(risk)
+pxndx = risklvl.json()
 skri = onde.json()
 
 esono = skri['vpn_or_proxy']
