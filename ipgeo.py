@@ -51,6 +51,7 @@ postal = comoja['postal']
 
 zhora = comoja['timezone']
 
+riesgo = pxndx['ksksksksk']
 print("\nCity - "+ ciudad)
 print("\nState - " + estado)
 print("\nCountry - " + pais)
