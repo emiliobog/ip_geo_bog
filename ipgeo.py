@@ -16,11 +16,12 @@ def banner():
   """)
 banner()
 
-geoapi = 'http://ipinfo.io/'
 print("")
 resp = input("IP>> ")
 
 geoapi = 'http://ipinfo.io/{}'.format(resp)
+
+risk = 'https://fraudguard.io/?ip='.format(resp)
 onde = requests.get("https://ip.teoh.io/api/vpn/"+resp)
 salav = requests.get(geoapi)
 skri = onde.json()
